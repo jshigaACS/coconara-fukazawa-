@@ -1,0 +1,1445 @@
+{
+    "findItemsByProductResponse": [
+        {
+            "itemSearchURL": [
+                "https://www.ebay.com/sch/?_ddo=1&_ipg=10&_pgn=1&_productid=153299370"
+            ],
+            "searchResult": [
+                {
+                    "item": [
+                        {
+                            "galleryURL": [
+                                "https://thumbs3.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-09-27T17:00:01.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "38"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-11-27T17:00:01.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "153660973558"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": ["New\xa0The Little Mermaid (Blu-ray/DVD, 2 Disc Set, Diamond Edition) Fast Shipping"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P7DT10H59M4S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "13.49"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "13.49"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/New-The-Little-Mermaid-Blu-ray-DVD-2-Disc-Set-Diamond-Edition-Fast-Shipping-/153660973558"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Brand New"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "2"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "La Mesa,CA,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "919**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs3.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-08-14T09:38:15.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "3"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-12-14T09:38:15.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "193048034830"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid (Blu-ray Set, Diamond Edition)"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P24DT3H37M18S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "13.49"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "13.49"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Blu-ray-Set-Diamond-Edition-/193048034830"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Brand New"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "2"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "USA"
+                            ],
+                            "country": [
+                                "US"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs3.ebaystatic.com/m/mL2PzJdj95sxMhGoerAsIiA/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "true"
+                                    ],
+                                    "startTime": [
+                                        "2019-11-20T04:15:55.000Z"
+                                    ],
+                                    "convertedBuyItNowPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.99"
+                                        }
+                                    ],
+                                    "listingType": [
+                                        "AuctionWithBIN"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.99"
+                                        }
+                                    ],
+                                    "endTime": [
+                                        "2019-11-27T04:15:55.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "254427523606"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid: Diamond Edition [Blu-ray+DVD] EUC BOTH DISCS IN GREAT SHAPE"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P6DT22H14M58S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "bidCount": [
+                                        "0"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5.99"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5.99"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Diamond-Edition-Blu-ray-DVD-EUC-BOTH-DISCS-GREAT-SHAPE-/254427523606"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "5000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Good"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "3"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Lenexa,KS,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "662**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs2.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-11-14T13:48:23.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "2"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-12-14T13:48:23.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "123975434953"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid (Blu-ray/DVD, 2013, 2-Disc Set, Diamond Edition)"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P24DT7H47M26S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5.95"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5.95"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Blu-ray-DVD-2013-2-Disc-Set-Diamond-Edition-/123975434953"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "2750"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Like New"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "2"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "2.95"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Tampa,FL,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "336**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs4.ebaystatic.com/m/mtaXUXVG93BAiw0SorH7p-Q/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-05-09T02:11:09.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "18"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-12-09T02:11:09.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "223509277639"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid DVD Triology 1 2 3 Brand New"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P18DT20H10M12S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-DVD-Triology-1-2-3-Brand-New-/223509277639"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Brand New"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "3"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Miami,FL,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "331**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs4.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-10-31T19:59:32.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "1"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-11-30T19:59:32.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "163925837711"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid: Diamond Edition [Blu-ray+DVD]"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P10DT13H58M35S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.13"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.13"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Diamond-Edition-Blu-ray-DVD-/163925837711"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "5000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Good"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "2"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Racine,WI,USA"
+                            ],
+                            "charityId": [
+                                "130055"
+                            ],
+                            "postalCode": [
+                                "534**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs4.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2018-10-22T20:34:19.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "31"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-11-22T20:34:19.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "382601390379"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid (Blu-ray/DVD,  Set, Diamond Edition)"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P2DT14H33M22S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "18.99"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "18.99"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Blu-ray-DVD-Set-Diamond-Edition-/382601390379"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "1000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Brand New"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "3"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Opa-Locka,FL,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "330**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs4.ebaystatic.com/m/mn4d04Kka6X_zGVHtZnxWLw/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "startTime": [
+                                        "2019-04-15T22:36:24.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "3"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-12-15T22:36:24.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "183776149115"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid Target Exclusive Digibook / Storybook Blu-ray / DVD 2-disc"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P25DT16H35M27S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "39.99"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "39.99"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Target-Exclusive-Digibook-Storybook-Blu-ray-DVD-2-disc-/183776149115"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "4000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Very Good"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "1"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Warrensburg,MO,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "640**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs3.ebaystatic.com/m/mAwscijr1BFEwNvAacjJTPw/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-11-11T23:09:28.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "1"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-12-11T23:09:28.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "184032623798"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "Disney The Little Mermaid Blu-ray/DVD, 2013 Diamond Edition W/ Slipcover"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P21DT17H8M31S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10.5"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10.5"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Disney-Little-Mermaid-Blu-ray-DVD-2013-Diamond-Edition-W-Slipcover-/184032623798"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "5000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Good"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "2"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "2.75"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "San Antonio,TX,USA"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "postalCode": [
+                                "782**"
+                            ]
+                        },
+                        {
+                            "galleryURL": [
+                                "https://thumbs3.ebaystatic.com/m/mzosWBZsv6llx2Eqh4Vfejg/140.jpg"
+                            ],
+                            "productId": [
+                                {
+                                    "@type": "ReferenceID",
+                                    "__value__": "153299370"
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "startTime": [
+                                        "2019-10-25T19:53:43.000Z"
+                                    ],
+                                    "watchCount": [
+                                        "1"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "endTime": [
+                                        "2019-11-25T19:53:43.000Z"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryName": [
+                                        "DVDs & Blu-ray Discs"
+                                    ],
+                                    "categoryId": [
+                                        "617"
+                                    ]
+                                }
+                            ],
+                            "itemId": [
+                                "293297594770"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "title": [
+                                "The Little Mermaid: Diamond Edition [Blu-ray+DVD]"
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "timeLeft": [
+                                        "P5DT13H52M46S"
+                                    ],
+                                    "sellingState": [
+                                        "Active"
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.33"
+                                        }
+                                    ],
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "9.33"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "viewItemURL": [
+                                "https://www.ebay.com/itm/Little-Mermaid-Diamond-Edition-Blu-ray-DVD-/293297594770"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "5000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Good"
+                                    ]
+                                }
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "handlingTime": [
+                                        "3"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ]
+                                }
+                            ],
+                            "location": [
+                                "Appleton,WI,USA"
+                            ],
+                            "charityId": [
+                                "30009"
+                            ],
+                            "postalCode": [
+                                "549**"
+                            ]
+                        }
+                    ],
+                    "@count": "10"
+                }
+            ],
+            "version": [
+                "1.13.0"
+            ],
+            "timestamp": [
+                "2019-11-20T06:00:57.092Z"
+            ],
+            "ack": [
+                "Success"
+            ],
+            "paginationOutput": [
+                {
+                    "totalPages": [
+                        "13"
+                    ],
+                    "entriesPerPage": [
+                        "10"
+                    ],
+                    "totalEntries": [
+                        "122"
+                    ],
+                    "pageNumber": [
+                        "1"
+                    ]
+                }
+            ]
+        }
+    ]
+}
