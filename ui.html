@@ -14,7 +14,7 @@
   <!--jquery-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
 
-  <script src='./module.js'></script>
+
 
   <title>安値商品検索ツール</title>
 
@@ -49,28 +49,6 @@
     </li>
   </ul>
 
-  <!--<ul class="list-group" style="max-width: 400px;">
-  <li class="list-group-item">リスト1</li>
-  <li class="list-group-item">リスト2</li>
-  <li class="list-group-item">リスト3</li>
-</ul>
-  <nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
-    <a href="/" class="block text-left">
-      <img src="https://stitches.hyperyolo.com/images/logo.png" class="h-10 sm:h-10 rounded-full" alt="logo">
-    </a>
-    <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
-      <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Products</a></li>
-      <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Pricing</a></li>
-      <li class="pr-2"><a href="#"
-          class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">FAQs</a></li>
-      <li class="pl-2 border-l"><a href="#"
-          class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Log In</a></li>
-      <button class="bg-black hover:bg-text-gray-800 text-white ml-4 py-2 px-3">
-        Sign Up
-      </button>
-    </ul>
-  </nav>
-  -->
   <form class="font-sans text-sm rounded w-full max-w-md mx-auto my-8 px-8 pt-6 pb-8">
     UPC_code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
       <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="upc" type="text"
@@ -113,11 +91,14 @@
     </div>
 
     <div class="flex items-center justify-between">
-      <button class="bg-black hover:bg-black text-white py-2 px-4" type="button">
+      <button class="bg-black hover:bg-black text-white py-2 px-4" type="button" id="ajax">
         商品を検索する
       </button>
+      <div id="add_link"></div>
     </div>
   </form>
+  <script src='./module.js'></script>
+
 </body>
 
 </html>
