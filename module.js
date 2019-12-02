@@ -3,6 +3,15 @@ var file_data;
 var file_name;//handleFileSelectの際にファイルnameを取得する
 var res_data;
 
+//拡張子を消す
+function baseName(str)
+{
+   var base = new String(str).substring(str.lastIndexOf('/') + 1); 
+    if(base.lastIndexOf(".") != -1)       
+        base = base.substring(0, base.lastIndexOf("."));
+   return base;
+}
+
 //aタグ押下時の処理
 function handleDownload(){
     var bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
@@ -35,9 +44,6 @@ function add_btn() {
     //click-event
     handleDownload();
 
-    a.click();
-
-
 }
 
 
@@ -52,10 +58,15 @@ function handleFileSelect(evt) {
     reader.onload = function(){
         var csv = reader.result.replace(/\r?\n/g, "");
         var csvArray = csv.split(',');
+        var fName = file.name;
         if (csvArray.length <= 5000){
 
             //ajax
             file_data = csvArray;
+            file_name = baseName(fName);
+            console.log(file_data);
+            console.log(file_name);
+            
 
         }else{
             alert('5000件以下にしてください');
@@ -87,12 +98,15 @@ $(document).ready(function () {
 
 //submit botton押下時
 $(function(){
-    $('#ajax').on('click',function(){
+    $('#ajax').on('click',function(btn){
+        btn.disabled=true;
         $.ajax({
             url:'http://localhost:80/phpinfo.php',
             type:'POST',
-            data:{
-                'fill_list':file_data
+            data: {
+                'file_data':file_data,
+                'file_name':file_name,
+                'condition':1
             }
         })
         //疎通成功
@@ -106,3 +120,4 @@ $(function(){
         })
     });
 });
+

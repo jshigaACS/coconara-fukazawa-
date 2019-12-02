@@ -51,8 +51,8 @@
 
   <form class="font-sans text-sm rounded w-full max-w-md mx-auto my-8 px-8 pt-6 pb-8">
     UPC_code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="upc" type="text"
-        placeholder="Input EPC code">
+      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="upc" type="text"
+        placeholder="Input EPC code">-->
       <div>
         <!--<span class="btn btn-info btn-block" class="file_up" id="upc_file_up">upcコードファイルをアップします        </span>-->
         <input type="file" class="btn btn-info btn-block file_up" id="upc_file_up" >
@@ -60,26 +60,28 @@
     </div>
 
     RefferenceID(ebay-ID)<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="RefferenceID"
-        placeholder="Input RefferenceID">
+      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="RefferenceID" placeholder="Input RefferenceID">-->
       <div>
-        <button class="btn btn-info btn-block" id='ebay_id_file_up' class="file_up">ebayコードファイルをアップします</button>
-      </div>
+        <!--<button class="btn btn-info btn-block" id='ebay_id_file_up' class="file_up">ebayコードファイルをアップします</button>-->
+        <input type="file" class="btn btn-info btn-block file_up" id="ebayId_file_up" >
 
+      </div>
     </div>
 
     EAN-code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="EAN" placeholder="Input EAN code">
+      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="EAN" placeholder="Input EAN code">
       <div>
         <button class="btn btn-info btn-block" id='ean_file_up'>EANコードファイルをアップします</button>
+      </div>-->
+      <div>
+      <input type="file" class="btn btn-info btn-block file_up" id="ean_file_up" >
       </div>
-
     </div>
 
     ISBN-code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="ISBN" placeholder="Input ISBN code">
+      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="ISBN" placeholder="Input ISBN code">-->
       <div>
-        <button class="btn btn-info btn-block" id='isbn_file_up'>ISBNコードファイルをアップします</button>
+        <input type="file" class="btn btn-info btn-block file_up" id="isbn_file_up" >
       </div>
 
     </div>
