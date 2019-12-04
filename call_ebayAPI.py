@@ -109,7 +109,7 @@ def setting():
     return get_params
 
 
-def format_df(df):
+def format_df(df,cnt):
     rows_num = len(df)
 
     
@@ -134,6 +134,7 @@ def format_df(df):
         new_dict['shippingCost_' +str(i)] = row[6]
         new_dict['viewItemUrl_'+str(i)] = row[7]
 
+    new_dict['count'] = cnt
     rt_df = pd.DataFrame(new_dict.values(),index=new_dict.keys()).T
     
     #きれいな要望通りのjson形式にそろえる
@@ -156,7 +157,7 @@ if str(r.status_code) != '500':
         #通信の確認
         if 'Success' in judge_ok:
             count_num = json_dict[response_name][0]['searchResult'][0]['@count']
-            
+            #print(count_num)         
             #成功カウント数の確認
             if 1 <= int(count_num):
 
@@ -172,10 +173,10 @@ if str(r.status_code) != '500':
                     return_df[key] = lower_3_series
 
                 
-                return_df = format_df(return_df) #すべてのカラムがそろっていないから
+                rtn_df = format_df(return_df,count_num) #すべてのカラムがそろっていないから
 
-            else:
-                print('connect:OK, count:zero')
+            #else:
+            #print('connect:OK, count:zero')
     
 
     except Exception as e:
@@ -184,10 +185,10 @@ if str(r.status_code) != '500':
         print(1)
 
     else:#end try
-        #print('正常に終了しました')
 
-        #return_df.to_csv('./sample.csv')
-        print(return_df.to_json())        
+        #print(return_df)        
+        #return_df.to_csv('/home/ubuntu/coconara/'+'rtn_'+file_name+'.csv',sep=',',index=False)
+        print(rtn_df.to_csv(sep=',',index=False,header=False),end="")
 
 else:#server error
     print('internal server error:500')

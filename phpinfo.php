@@ -13,6 +13,9 @@ foreach ($file_data as $d) {
     #$outPutArray[] = $output;//outputは配列で帰るArray
     #print_r($output);    
 }
-print_r($output);
+
+foreach($output as $line){
+    print($line."\n");
+}
 
 ?>

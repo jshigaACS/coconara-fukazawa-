@@ -16,7 +16,8 @@ function baseName(str)
 function handleDownload(){
     var bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
     var content = res_data;
-    var blob = new Blob([ bom, content ], { "type" : "text/csv" });
+    var header = "code_type_0,itemId_0,condition_0,currencyID_0,sellPrice0,shippingType_0,shippingCost_0,viewItemUrl_0,code_type_1,itemId_1,condition_1,currencyID_1,sellPrice1,shippingType_1,shippingCost_1,viewItemUrl_1,code_type_2,itemId_2,condition_2,currencyID_2,sellPrice2,shippingType_2,shippingCost_2,viewItemUrl_2,count\n";
+    var blob = new Blob([ bom, header,content ], { "type" : "text/csv" });
     
     var a_tag = document.getElementById("download");
         
@@ -112,8 +113,15 @@ $(function(){
         //疎通成功
         .done((data) =>{
             res_data = data;
-            console.log(res_data)
-            add_btn();  
+            console.log(res_data);
+            //str = res_data[0].toString().join(',')
+            //console.log(str)
+            //body = res_data[1];
+            //console.log(header);
+            //console.log(body);
+            
+            console.log(JSON.stringify(res_data));
+            add_btn();
         })
         .fail((data) =>{
             console.log('失敗だよ');
