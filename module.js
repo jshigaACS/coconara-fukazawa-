@@ -22,14 +22,14 @@ function handleDownload(){
     var a_tag = document.getElementById("download");
         
     if (window.navigator.msSaveBlob) { 
-        window.navigator.msSaveBlob(blob, "test.csv"); 
+        window.navigator.msSaveBlob(blob, file_name+"_return"+".csv"); 
 
         // msSaveOrOpenBlobの場合はファイルを保存せずに開ける
-        window.navigator.msSaveOrOpenBlob(blob, "test.csv"); 
+        window.navigator.msSaveOrOpenBlob(blob, file_name+"_return"+".csv"); 
     } else {
         a_tag.href = window.URL.createObjectURL(blob);
     }
-
+    
 }
 
 //ajax成功時にaタグを作る
@@ -38,8 +38,9 @@ function add_btn() {
     var a = document.createElement("a");
     a.href = "#";
     a.id = "download";
-    a.download = "test.csv";
+    a.download = file_name+"_return"+".csv";
     a.innerText = "ファイルをダウンロードします";
+    a.onclick = "del_me()";
     a_tabg_div.appendChild(a);
 
     //click-event
@@ -47,6 +48,12 @@ function add_btn() {
 
 }
 
+//二度目の通信時に処理
+function del_me(){
+
+    $("#download").remove();
+
+}
 
 //ファイルの内容取得
 function handleFileSelect(evt) {
@@ -74,7 +81,7 @@ function handleFileSelect(evt) {
         }
     }
     reader.readAsText(file);
-
+    
 }
 
 //ファイルアップボタン押下時
@@ -100,32 +107,50 @@ $(document).ready(function () {
 //submit botton押下時
 $(function(){
     $('#ajax').on('click',function(btn){
-        btn.disabled=true;
-        $.ajax({
-            url:'http://localhost:80/phpinfo.php',
-            type:'POST',
-            data: {
-                'file_data':file_data,
-                'file_name':file_name,
-                'condition':1
-            }
-        })
-        //疎通成功
-        .done((data) =>{
-            res_data = data;
-            console.log(res_data);
-            //str = res_data[0].toString().join(',')
-            //console.log(str)
-            //body = res_data[1];
-            //console.log(header);
-            //console.log(body);
+        if (typeof file_data !== 'undefined'){
+            del_me();
+            var appId = $("#AppID").val();
+            var newOrOld = $("#selector").val();
+            $(this).attr('disabled', true);
+            $(this).text('clicked!');
+            $('#progress').css('display','block');
             
-            console.log(JSON.stringify(res_data));
-            add_btn();
-        })
-        .fail((data) =>{
-            console.log('失敗だよ');
-        })
+            $.ajax({
+                url:'http://localhost:80/phpinfo.php',
+                type:'POST',
+                data: {
+                    'file_data':file_data,
+                    'file_name':file_name,
+                    'condition':newOrOld,
+                    'appId':appId
+                }
+            })
+            //疎通成功
+            .done((data) =>{
+                $('#progress').css('display','none');                
+                res_data = data;
+                $(this).text('商品を検索する');
+                $(this).attr('disabled', false);
+
+                console.log(res_data);
+
+                reset_file();
+                add_btn();
+
+            })
+            .fail((data) =>{
+                console.log('失敗だよ');
+            })
+        }else{
+            alert('ファイルを選択してください');
+        }
     });
 });
 
+//file情報リセット
+function reset_file() {
+    elm = document.getElementsByClassName('file_up');
+    for(let i=0;i<elm.length;i++){
+        elm.item(i).value = "";
+    }
+}

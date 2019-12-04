@@ -35,9 +35,12 @@
 
   <ul class="list-group text-center" 　style="max-width: 100px; margin: auto;">
     <li class="list-group-item">
-      1. 商品コードを入力する（1つでも複数でも可能）
+      1. ファイルをアップロードしてください
     </li>
-    <li class="list-group-item">2. あなたのアプリIDを入力する
+    <li class="list-group-item">
+      2. 検索条件を選択してください（新品or中古）
+    </li>
+    <li class="list-group-item">3. あなたのアプリIDを入力する
       <br><a href="https://developer.ebay.com/">(eBay API Developes
         Program</a>より事前に取得してください)
     </li>
@@ -47,10 +50,14 @@
     </li>
     <li class="list-group-item">5. ファイルをエクセルで開いてください
     </li>
+    <li class="list-group-item">注意）ファイル名は以下に固定
+      <br>ReferenceID, ISBN, UPC, EAN
+      <br>拡張子はすべてCSV
+    </li>
   </ul>
 
   <form class="font-sans text-sm rounded w-full max-w-md mx-auto my-8 px-8 pt-6 pb-8">
-    UPC_code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
+    ファイルをアップしてください<div class="relative border rounded mb-4 shadow appearance-none label-floating">
       <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="upc" type="text"
         placeholder="Input EPC code">-->
       <div>
@@ -59,33 +66,43 @@
       </div>
     </div>
 
+    新品or中古を選択してだくさい<div class="relative border rounded mb-4 shadow appearance-none label-floating">
+      <div class="file_up">
+        <!--<span class="btn btn-info btn-block" class="file_up" id="upc_file_up">upcコードファイルをアップします        </span>-->
+        <select id="selector" name="newOrOld" class="form-control">
+          <option value="0">新品</option>
+          <option value="1">中古</option>
+        </select>
+      </div>
+
+    </div>
+    <!--
     RefferenceID(ebay-ID)<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="RefferenceID" placeholder="Input RefferenceID">-->
+      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="RefferenceID" placeholder="Input RefferenceID">
       <div>
-        <!--<button class="btn btn-info btn-block" id='ebay_id_file_up' class="file_up">ebayコードファイルをアップします</button>-->
+        <button class="btn btn-info btn-block" id='ebay_id_file_up' class="file_up">ebayコードファイルをアップします</button>
         <input type="file" class="btn btn-info btn-block file_up" id="ebayId_file_up" >
 
       </div>
     </div>
 
     EAN-code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="EAN" placeholder="Input EAN code">
+      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="EAN" placeholder="Input EAN code">
       <div>
         <button class="btn btn-info btn-block" id='ean_file_up'>EANコードファイルをアップします</button>
-      </div>-->
+      </div>
       <div>
       <input type="file" class="btn btn-info btn-block file_up" id="ean_file_up" >
       </div>
     </div>
 
     ISBN-code<div class="relative border rounded mb-4 shadow appearance-none label-floating">
-      <!--<input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="ISBN" placeholder="Input ISBN code">-->
+      <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="ISBN" placeholder="Input ISBN code">
       <div>
         <input type="file" class="btn btn-info btn-block file_up" id="isbn_file_up" >
       </div>
 
-    </div>
-
+    </div>-->
 
     AppID<div class="relative border rounded mb-4 shadow appearance-none label-floating">
       <input class="w-full py-2 px-3 text-gray-700 leading-normal rounded" id="AppID" type="AppID"
@@ -97,6 +114,7 @@
         商品を検索する
       </button>
       <div id="add_link"></div>
+      <div><input type="text"  id="progress" value="------処理中です------" style="display: none;"></div>
     </div>
   </form>
   <script src='./module.js'></script>
