@@ -22,7 +22,7 @@ import io
 #receive params
 file_name = sys.argv[1]
 file_data = sys.argv[2]
-#cond = 1 #1:used, 0:new
+cond = 1 #1:used, 0:new
 cond = int(sys.argv[3])
 app_id = sys.argv[4]
 
@@ -34,6 +34,8 @@ item_id_lists = {
     #'EAN':'9780764311222'
 }
 
+default_str = "cnt:0"
+rtn_df = pd.DataFrame(data=[default_str])
 
 if cond == 1:#used
   condition_param = 3000
@@ -60,28 +62,41 @@ def buildRequestsURL(type_, item_id):
     if  condition_param == 3000: #used
         value_1 = 4000
         value_2 = 5000
+        value_3 = 6000
+        value_4 = 7000
 
     else:#new
         value_1 = 2000
         value_2 = 2500
+        value_3 = 1500
+        value_4 = 1750
+        value_5 = 2750
 
     params = OrderedDict()
     params['OPERATION-NAME'] = operation_name
     params['SERVICE-VERSION'] = '1.13.0'
+    params['GLOBAL-ID'] = 'EBAY-US'
     params['SECURITY-APPNAME'] = app_id
     params['MESSAGE-ENCODING'] = 'UTF-8'
     params['RESPONSE-DATA-FORMAT'] = 'JSON'
     params['REST-PAYLOAD'] = 'true'
-    params['paginationInput.entriesPerPage'] = 1000
+    params['paginationInput.entriesPerPage'] = 100
+    params['paginationInput.pageNumber'] = 100
     params['productId.@type'] = type_
     params['productId'] = item_id
     params['sortOrder'] = 'PricePlusShippingLowest'
     params['itemFilter(0).name'] = 'Condition'
-    params['itemFilter(0).value(0)'] = cond_name
+    params['itemFilter(0).value(0)'] = condition_param
     params['itemFilter(0).value(1)'] = value_1
     params['itemFilter(0).value(2)'] = value_2
-    params['itemFilter(1).name'] = 'ListingType'
-    params['itemFilter(1).value(0)'] = 'AuctionWithBIN'
+    params['itemFilter(0).value(3)'] = value_3
+    params['itemFilter(0).value(4)'] = value_4
+
+    if  condition_param != 3000:#new
+        params['itemFilter(0).value(5)'] = value_5
+
+    #params['itemFilter(1).name'] = 'ListingType'
+    #params['itemFilter(1).value(0)'] = 'AuctionWithBIN'
 
 
     r = requests.get(base_url,params=params)
@@ -144,6 +159,7 @@ def format_df(df,cnt):
 
 
 r = buildRequestsURL(file_name, file_data)
+#print(r.url)
 
 if str(r.status_code) != '500':
     json_dict = json.loads(r.text)
@@ -173,24 +189,22 @@ if str(r.status_code) != '500':
 
                     return_df[key] = lower_3_series
 
-                
+                rtn_df = None
                 rtn_df = format_df(return_df,count_num) #すべてのカラムがそろっていないから
 
-            #else:
-            #print('connect:OK, count:zero')
-    
+        else:#failure
+            print(r.url)
 
-    except Exception as e:
+    except Exception as e:#program-error
         print(e)
         print('exception-occured') 
-        print(1)
 
-    else:#end try
+    else:#try-end, cnt >= 1
 
         #print(return_df)        
         #return_df.to_csv('/home/ubuntu/coconara/'+'rtn_'+file_name+'.csv',sep=',',index=False)
-        print(rtn_df.to_csv(sep=',',index=False,header=False),end="")
+        if default_str not in rtn_df.values:
+            print(rtn_df.to_csv(sep=',',index=False,header=False),end="")
 
 else:#server error
     print('internal server error:500')
-    #print(r.url)
