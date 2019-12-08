@@ -116,7 +116,8 @@ $(function(){
             $('#progress').css('display','block');
             
             $.ajax({
-                url:'http://localhost:80/phpinfo.php',
+                //url:'http://localhost:80/phpinfo.php',
+                url:'http://usedfuruichi.com/item_manage_src/phpinfo.php',
                 type:'POST',
                 data: {
                     'file_data':file_data,
@@ -140,6 +141,10 @@ $(function(){
             })
             .fail((data) =>{
                 console.log('失敗だよ');
+                $('#progress').css('display', 'none');
+                $(this).text('商品を検索する');
+                $(this).attr('disabled', false);
+
             })
         }else{
             alert('ファイルを選択してください');

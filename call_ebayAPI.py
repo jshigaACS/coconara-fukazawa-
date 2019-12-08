@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*- coding: utf-8 -*-
 
 import sys
@@ -20,12 +19,16 @@ import io
  4. response-jsonをjsに返す＿＿
 """
 #receive params
-file_name = sys.argv[1]
-file_data = sys.argv[2]
-cond = 1 #1:used, 0:new
-cond = int(sys.argv[3])
-app_id = sys.argv[4]
-
+#file_name = sys.argv[1]
+file_name = 'ReferenceID'
+#file_data = sys.argv[2]
+file_data = 153299370
+#cond = 1 #1:used, 0:new
+cond = 1
+#cond = int(sys.argv[3])
+#app_id = sys.argv[4]
+app_id = "junshiga-Forcocon-PRD-340728b69-97233dce"
+"""
 item_id_lists = {
     'ReferenceID':'153299370',
     #'ReferenceID':'9780764311222',
@@ -33,9 +36,9 @@ item_id_lists = {
     #'UPC':'793389361342',
     #'EAN':'9780764311222'
 }
-
-default_str = "cnt:0"
-rtn_df = pd.DataFrame(data=[default_str])
+"""
+default_str = ["cnt:0"]
+rtn_df = pd.DataFrame({"data":default_str})
 
 if cond == 1:#used
   condition_param = 3000
@@ -151,8 +154,16 @@ def format_df(df,cnt):
         new_dict['viewItemUrl_'+str(i)] = row[7]
 
     new_dict['count'] = cnt
-    rt_df = pd.DataFrame(new_dict.values(),index=new_dict.keys()).T
-    
+    data = list(new_dict.values())
+    index = list(new_dict.keys())
+
+    #print(data)
+    #print('-------index')
+    #print(index)
+    #print('-------dict')
+    rt_df = pd.DataFrame(data,index=index).T
+
+
     #きれいな要望通りのjson形式にそろえる
     return rt_df
 
@@ -197,7 +208,7 @@ if str(r.status_code) != '500':
 
     except Exception as e:#program-error
         print(e)
-        print('exception-occured') 
+        #print('exception-occured') 
 
     else:#try-end, cnt >= 1
 

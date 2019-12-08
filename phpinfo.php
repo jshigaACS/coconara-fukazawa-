@@ -1,5 +1,24 @@
-<?php 
+<?php
 header("Access-Control-Allow-Origin: *");
+
+/**********************************************************************
+ * Ajax による呼び出しなら true を返す関数．
+ * function isAjax() {
+  if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+
+    return true;
+  }
+  return false;
+}
+
+// Ajax 以外での呼び出し時はエラーを出力．
+if(!isAjax()) {
+  echo 'Error: Ajax 以外での呼び出しは禁止されています．';
+  exit;
+}
+
+ **********************************************************************/
+
 
 
 $file_name = $_POST['file_name'];
