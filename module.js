@@ -1,5 +1,5 @@
 //global ForAjax
-var file_data;
+var file_data =null;
 var file_name;//handleFileSelectの際にファイルnameを取得する
 var res_data;
 
@@ -107,7 +107,7 @@ $(document).ready(function () {
 //submit botton押下時
 $(function(){
     $('#ajax').on('click',function(btn){
-        if (typeof file_data !== 'undefined'){
+        if (file_data != null){
             del_me();
             var appId = $("#AppID").val();
             var newOrOld = $("#selector").val();
@@ -117,13 +117,15 @@ $(function(){
             
             $.ajax({
                 //url:'http://localhost:80/phpinfo.php',
-                url:'http://usedfuruichi.com/item_manage_src/phpinfo.php',
+                url:'https://usedfuruichi.com/item_manage_src/phpinfo.php',
                 type:'POST',
                 data: {
                     'file_data':file_data,
                     'file_name':file_name,
                     'condition':newOrOld,
-                    'appId':appId
+                    'appId':appId,
+                    'credential':'credential'
+
                 }
             })
             //疎通成功
@@ -134,7 +136,7 @@ $(function(){
                 $(this).attr('disabled', false);
 
                 console.log(res_data);
-
+                file_data = null;
                 reset_file();
                 add_btn();
 
@@ -144,8 +146,9 @@ $(function(){
                 $('#progress').css('display', 'none');
                 $(this).text('商品を検索する');
                 $(this).attr('disabled', false);
+                file_data = null;
 
-            })
+            });
         }else{
             alert('ファイルを選択してください');
         }

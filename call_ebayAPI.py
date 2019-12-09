@@ -19,15 +19,15 @@ import io
  4. response-jsonをjsに返す＿＿
 """
 #receive params
-#file_name = sys.argv[1]
-file_name = 'ReferenceID'
-#file_data = sys.argv[2]
-file_data = 153299370
+file_name = sys.argv[1]
+#file_name = 'ReferenceID'
+file_data = sys.argv[2]
+#file_data = 153299370
 #cond = 1 #1:used, 0:new
-cond = 1
-#cond = int(sys.argv[3])
-#app_id = sys.argv[4]
-app_id = "junshiga-Forcocon-PRD-340728b69-97233dce"
+#cond = 1
+cond = int(sys.argv[3])
+app_id = sys.argv[4]
+
 """
 item_id_lists = {
     'ReferenceID':'153299370',
