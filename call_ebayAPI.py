@@ -56,7 +56,7 @@ else:#new
 dev_id = '8e15105d-93a7-4506-9fbe-2bea951c626b'
 operation_name = 'findItemsByProduct'
 response_name = 'findItemsByProductResponse'
-#app_id = 'junshiga-Forcocon-PRD-340728b69-97233dce'
+
 
 base_url = 'https://svcs.ebay.com/services/search/FindingService/v1?'
 
