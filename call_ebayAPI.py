@@ -136,6 +136,13 @@ def format_df(df,cnt):
     df['currencyID'] = ['USD' for i in range(rows_num)]
     df = df[['code_type','itemId','condition','currencyID','sellPrice','shippingType','shippingCost','viewItemUrl']]
 
+    #fillNa
+    df = df.fillna(
+        {
+            'sellPrice':0,
+            'shippingCost':0
+        }
+    )
     new_dict = OrderedDict()
     for i, row in df.iterrows():
         #print(row[0])
@@ -151,6 +158,8 @@ def format_df(df,cnt):
         new_dict['sellPrice'+str(i)] = row[4]
         new_dict['shippingType_'+str(i)] = row[5]
         new_dict['shippingCost_' +str(i)] = row[6]
+        shipCostPlusSellPrice = float(row[4])+float(row[6])
+        new_dict['shipCost+SellPrice_'+str(i)] = shipCostPlusSellPrice
         new_dict['viewItemUrl_'+str(i)] = row[7]
 
     new_dict['count'] = cnt
