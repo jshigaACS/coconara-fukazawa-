@@ -28,8 +28,7 @@ if(!isAjax()) {
   $outPutArry=array();
   foreach ($file_data as $d) {
       //$cmd = "python3 /home/ubuntu/coconara/call_ebayAPI.py $file_name $d $condition $appID";
-      //$cmd = "python3 /home/kouenjizack/usedfuruichi.com/public_html/item_manage_src/api.py ".$file_name." ".$d." ".$condition." ".$appID;
-      $cmd = "~/.pyenv/shims/python3 /home/kouenjizack/usedfuruichi.com/public_html/item_manage_src/api.py ".$file_name." ".$d." ".$condition." ".$appID;
+      $cmd = "~/.pyenv/shims/python3 /home/kouenjizack/usedfuruichi.com/public_html/item_manage_src/dist/call_ebayAPI.py ".$file_name." ".$d." ".$condition." ".$appID;
       
       exec($cmd,$output,$rc);
       #$outPutArray[] = $output;//outputは配列で帰るArray
