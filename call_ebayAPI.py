@@ -20,10 +20,10 @@ import io
 """
 #receive params
 file_name = sys.argv[1]
-#file_name = 'ReferenceID'
+#file_name = 'UPC'
 file_data = sys.argv[2]
-#file_data = 153299370
-#cond = 1 #1:used, 0:new
+#file_data = 4527823994249
+#cond = 0 #1:used, 0:new
 #cond = 1
 cond = int(sys.argv[3])
 app_id = sys.argv[4]
@@ -83,11 +83,12 @@ def buildRequestsURL(type_, item_id):
     params['MESSAGE-ENCODING'] = 'UTF-8'
     params['RESPONSE-DATA-FORMAT'] = 'JSON'
     params['REST-PAYLOAD'] = 'true'
+    params['buyerPostalCode'] = '60606'
     params['paginationInput.entriesPerPage'] = 100
     params['paginationInput.pageNumber'] = 100
     params['productId.@type'] = type_
     params['productId'] = item_id
-    params['sortOrder'] = 'PricePlusShippingLowest'
+    #params['sortOrder'] = 'PricePlusShippingLowest'
     params['itemFilter(0).name'] = 'Condition'
     params['itemFilter(0).value(0)'] = condition_param
     params['itemFilter(0).value(1)'] = value_1
@@ -140,16 +141,28 @@ def format_df(df,cnt):
     df = df.fillna(
         {
             'sellPrice':0,
-            'shippingCost':0
+            'shippingCost':0,
+            'viewItemUrl':0
         }
     )
+
+    #hyperlinkづける
+    for key,val in enumerate(df['viewItemUrl']):
+        if val != 0:
+            hyperLink = '=hyperlink('
+            df.at[key,'viewItemUrl'] = hyperLink+'\"'+val+'\"'+')'
+
+        continue#urlが値0ならばスキップ
+
     new_dict = OrderedDict()
+
     for i, row in df.iterrows():
         #print(row[0])
         #print(row[1])
         #print(row[2])
         #print(row[3])
         #print(row[4])
+        #print(row[6])
         
         new_dict['code_type_'+str(i)] = row[0]
         new_dict['itemId_'+str(i)] = row[1]
@@ -159,7 +172,7 @@ def format_df(df,cnt):
         new_dict['shippingType_'+str(i)] = row[5]
         new_dict['shippingCost_' +str(i)] = row[6]
         shipCostPlusSellPrice = float(row[4])+float(row[6])
-        new_dict['shipCost+SellPrice_'+str(i)] = shipCostPlusSellPrice
+        new_dict['shipCost+SellPrice_'+str(i)] = str(shipCostPlusSellPrice)
         new_dict['viewItemUrl_'+str(i)] = row[7]
 
     new_dict['count'] = cnt
@@ -205,6 +218,7 @@ if str(r.status_code) != '500':
                     #if val == 'findItemsByProductResponse[].searchResult[].item[]':#.conditionDisplayName':
                     res_list = jmespath.search(val,json_dict)
                     lower_3_list = res_list[:3]#上位三件を取得
+
                     lower_3_series = pd.Series(lower_3_list)#Series化
 
                     return_df[key] = lower_3_series
